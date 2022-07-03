@@ -14,9 +14,21 @@ class ThirdPageView extends GetView<ThirdPageController> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'ThirdPageView is working',
-          style: TextStyle(fontSize: 20),
+        child: Column(
+          children: [
+            Text(
+              'ThirdPageView is working',
+              style: TextStyle(fontSize: 20),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Get.defaultDialog(
+                      onConfirm: () => Get.back(),
+                      middleText:
+                          "Dialog made in 3 lines of code\nRAM\nPAM\nPAM");
+                },
+                child: Text('Get dialog box'))
+          ],
         ),
       ),
     );

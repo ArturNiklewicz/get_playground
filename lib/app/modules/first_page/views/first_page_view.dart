@@ -19,6 +19,9 @@ class FirstPageView extends GetView<FirstPageController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // TODO! GetBuilder w/ onInit() & on close() methods from Controller
+            // TODO: GetBuilder w/ onInit() fetch api & on close() close the streams methods from Controller
+
             GetBuilder<FirstPageController>(
               builder: (_) => Text(
                 'FirstPageView counter: ${_.count}',
@@ -32,6 +35,12 @@ class FirstPageView extends GetView<FirstPageController> {
         child: Icon(Icons.add),
         onPressed: () {
           firstPageController.increment();
+          Get.snackbar(
+            '${firstPageController.count} WOOBA WOOBA DUB DUB',
+            'You are on the first page',
+            backgroundColor: Colors.black,
+            colorText: Colors.white,
+          );
         },
       ),
     );

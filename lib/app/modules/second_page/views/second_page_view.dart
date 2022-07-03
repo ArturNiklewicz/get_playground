@@ -25,6 +25,10 @@ class SecondPageView extends GetView<SecondPageController> {
                 style: TextStyle(fontSize: 20),
               ),
             ),
+            GetBuilder<SecondPageController>(
+              init: SecondPageController(),
+              builder: (_) => Text("${_.count}"),
+            )
           ],
         ),
       ),
@@ -32,6 +36,12 @@ class SecondPageView extends GetView<SecondPageController> {
         child: Icon(Icons.add),
         onPressed: () {
           secondPageController.increment();
+          Get.snackbar(
+            '${secondPageController.count} WOOBA WOOBA DUB DUB',
+            'You are on the second route',
+            backgroundColor: Colors.red,
+            colorText: Colors.white,
+          );
         },
       ),
     );
