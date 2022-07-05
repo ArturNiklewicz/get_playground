@@ -31,28 +31,13 @@ class HomeView extends GetView<HomeController> {
           Column(children: [
             GetBuilder<FirstPageController>(
                 builder: (_) => Text("FirstPage counter: ${_.count}")),
-            ElevatedButton(
-                onPressed: () {
-                  Get.to(FirstPageView());
-                },
-                child: Text("first_page"))
           ]),
           Column(
             children: [
               GetBuilder<SecondPageController>(
                   builder: (_) => Text("SecondPage counter: ${_.count}")),
-              ElevatedButton(
-                  onPressed: () {
-                    Get.to(SecondPageView());
-                  },
-                  child: Text("second_page")),
             ],
           ),
-          ElevatedButton(
-              onPressed: () {
-                Get.to(ThirdPageView());
-              },
-              child: Text("third_page"))
         ],
       )),
     );
