@@ -7,7 +7,7 @@ import '../../modules/second_page/controllers/second_page_controller.dart';
 import '../../modules/second_page/views/second_page_view.dart';
 import '../../modules/third_page/views/third_page_view.dart';
 import '../../modules/~home_page/views/home_view.dart';
-import '../../navigation/custom_navigation_bar.dart';
+import '../../navigation/custom_animated_navigation_bar.dart';
 
 class NavBarPage extends StatefulWidget {
   NavBarPage({Key? key}) : super(key: key);
@@ -34,7 +34,7 @@ class _NavBarPageState extends State<NavBarPage> {
   }
 
   Widget _buildBottomBar() {
-    return CustomAnimatedBottomBar(
+    return CustomAnimatedNavigationBar(
       containerHeight: 70,
       backgroundColor: Colors.white,
       selectedIndex: _currentIndex,

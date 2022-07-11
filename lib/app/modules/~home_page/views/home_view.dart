@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_playground/app/shared_widgets/bottom_navigation_bar/nav_bar_controller.dart';
 import '../../../routes/app_pages.dart';
-import '../../../shared_widgets/bottom_navigation_bar/nav_bar.dart';
 import '../../first_page/controllers/first_page_controller.dart';
 import '../../first_page/views/first_page_view.dart';
 import '../../second_page/controllers/second_page_controller.dart';

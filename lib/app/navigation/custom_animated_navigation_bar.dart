@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class CustomAnimatedBottomBar extends StatelessWidget {
-  CustomAnimatedBottomBar({
+class CustomAnimatedNavigationBar extends StatelessWidget {
+  CustomAnimatedNavigationBar({
     Key? key,
     this.selectedIndex = 0,
     this.showElevation = true,
