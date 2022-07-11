@@ -34,7 +34,7 @@ import 'package:get/get.dart';
 * // static Controller get to => Get.find(); // with no static get
 *[...]
 *}
-// on stateful/stateless class
+on stateful/stateless class
 *GetBuilder<Controller>(  
 *  init: Controller(), // use it only first time on each controller
 *  builder: (_) => Text(

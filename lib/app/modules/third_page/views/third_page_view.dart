@@ -15,6 +15,7 @@ class ThirdPageView extends GetView<ThirdPageController> {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'ThirdPageView is working',

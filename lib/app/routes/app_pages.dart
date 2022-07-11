@@ -6,8 +6,8 @@ import '../modules/second_page/bindings/second_page_binding.dart';
 import '../modules/second_page/views/second_page_view.dart';
 import '../modules/third_page/bindings/third_page_binding.dart';
 import '../modules/third_page/views/third_page_view.dart';
-import '../modules/~home/bindings/home_binding.dart';
-import '../modules/~home/views/home_view.dart';
+import '../modules/~home_page/bindings/home_binding.dart';
+import '../modules/~home_page/views/home_view.dart';
 
 part 'app_routes.dart';
 
